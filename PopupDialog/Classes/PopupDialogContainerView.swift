@@ -33,13 +33,13 @@ final public class PopupDialogContainerView: UIView {
     // MARK: - Appearance
 
     /// The background color of the popup dialog
-    override public dynamic var backgroundColor: UIColor? {
+    @objc override public dynamic var backgroundColor: UIColor? {
         get { return container.backgroundColor }
         set { container.backgroundColor = newValue }
     }
 
     /// The corner radius of the popup view
-    public dynamic var cornerRadius: Float {
+    @objc public dynamic var cornerRadius: Float {
         get { return Float(shadowContainer.layer.cornerRadius) }
         set {
             let radius = CGFloat(newValue)
@@ -49,13 +49,13 @@ final public class PopupDialogContainerView: UIView {
     }
 
     /// Enable / disable shadow rendering
-    public dynamic var shadowEnabled: Bool {
+    @objc public dynamic var shadowEnabled: Bool {
         get { return shadowContainer.layer.shadowRadius > 0 }
         set { shadowContainer.layer.shadowRadius = newValue ? 5 : 0 }
     }
 
     /// The shadow color
-    public dynamic var shadowColor: UIColor? {
+    @objc public dynamic var shadowColor: UIColor? {
         get {
             guard let color = shadowContainer.layer.shadowColor else {
                 return nil
