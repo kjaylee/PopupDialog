@@ -95,7 +95,7 @@ final public class PopupDialog: UIViewController {
                 image: UIImage? = nil,
                 buttonAlignment: UILayoutConstraintAxis = .vertical,
                 transitionStyle: PopupDialogTransitionStyle = .bounceUp,
-                preferredWidth: CGFloat = 340,
+                preferredWidth: CGFloat = 270,
                 gestureDismissal: Bool = true,
                 hideStatusBar: Bool = false,
                 completion: (() -> Void)? = nil) {
@@ -133,7 +133,7 @@ final public class PopupDialog: UIViewController {
         viewController: UIViewController,
         buttonAlignment: UILayoutConstraintAxis = .vertical,
         transitionStyle: PopupDialogTransitionStyle = .bounceUp,
-        preferredWidth: CGFloat = 340,
+        preferredWidth: CGFloat = 270,
         gestureDismissal: Bool = true,
         hideStatusBar: Bool = false,
         completion: (() -> Void)? = nil) {
